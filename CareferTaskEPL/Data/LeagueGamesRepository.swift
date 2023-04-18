@@ -34,11 +34,11 @@ class LeagueGamesRepository: LeagueGamesReposing{
         return response
     }
     func fetchFavoriteGames() -> EplGamesPresentationData {
-        []
+        provider.fetchFavoriteGames()
     }
     
     func addFavoriteGame(game: EplGamePresentationData) {
-        
+        provider.addFavoriteGame(game: game)
     }
     
 }

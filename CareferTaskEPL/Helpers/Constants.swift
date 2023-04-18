@@ -12,3 +12,9 @@ let BASE_URL = "https://api.football-data.org"
 enum LeagueCode: String{
     case epl = "PL"
 }
+enum Keys: String{
+    case favorites = "favorites"
+    func callAsFunction() -> String {
+        return self.rawValue
+    }
+}

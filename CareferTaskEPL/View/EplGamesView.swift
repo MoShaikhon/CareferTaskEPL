@@ -12,14 +12,14 @@ struct EplGamesView: View {
     var body: some View {
         VStack{
             ControlGroup {
-                Text("All games")
-                    .font(.title)
-                    .padding()
-                Text("Favorites")
-                    .onTapGesture {
-//                        viewModel.
-                    }
-                
+                Button("All games"){
+                    viewModel.toggleToAllGames()
+                }
+                .font(.title)
+                .padding()
+                Button("Favorites"){
+                    viewModel.toggleToFavorites()
+                }
             }
             List {
                 ForEach($viewModel.eplGames, id: \.date) { $eplGame in
@@ -27,8 +27,9 @@ struct EplGamesView: View {
                         Text(eplGame.date)
                         ForEach($eplGame.datedGames){ game in
                             EplGameRow(game: game)
-                            
-                            
+                                .onLongPressGesture{
+                                    viewModel.addFavoriteEplGame(game: game.wrappedValue)
+                                }
                         }
                     }
                 }

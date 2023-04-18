@@ -131,6 +131,62 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B3311FEF29EF314D00E4DFDA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B3397E8429EDCCE80086D344 /* EPLGamesInteractor.swift */,
+				B341B9D229EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B3311FF029EF315700E4DFDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3E6DB6429EB377A00751B90 /* EplGamesView.swift */,
+				B31D6E3329EBC94100CA3E91 /* EplGamesViewModel.swift */,
+				B3311FEB29EEE91A00E4DFDA /* EplGameRow.swift */,
+				B31D6E3729EBC9AC00CA3E91 /* EplGamesPresentationData.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3311FF129EF316300E4DFDA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B3311FF429EF31A400E4DFDA /* Networking */,
+				B31D6E3529EBC97000CA3E91 /* LeagueGamesData.swift */,
+				B31D6E3F29ED13FF00CA3E91 /* LeagueGamesRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B3311FF229EF316B00E4DFDA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B31D6E3D29ED0D4700CA3E91 /* Constants.swift */,
+				B3311FED29EF227000E4DFDA /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B3311FF329EF317700E4DFDA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B3E6DB6229EB377A00751B90 /* CareferTaskEPLApp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B3311FF429EF31A400E4DFDA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B31D6E3929ECC5D400CA3E91 /* LeagueGamesProvider.swift */,
+				B31D6E3B29ED0C5600CA3E91 /* LeagueGamesServices.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B3E6DB5629EB377A00751B90 = {
 			isa = PBXGroup;
 			children = (
@@ -156,21 +212,13 @@
 		B3E6DB6129EB377A00751B90 /* CareferTaskEPL */ = {
 			isa = PBXGroup;
 			children = (
-				B3E6DB6229EB377A00751B90 /* CareferTaskEPLApp.swift */,
-				B3E6DB6429EB377A00751B90 /* EplGamesView.swift */,
-				B31D6E3329EBC94100CA3E91 /* EplGamesViewModel.swift */,
-				B31D6E3729EBC9AC00CA3E91 /* EplGamesPresentationData.swift */,
-				B31D6E3529EBC97000CA3E91 /* LeagueGamesData.swift */,
-				B31D6E3929ECC5D400CA3E91 /* LeagueGamesProvider.swift */,
-				B31D6E3B29ED0C5600CA3E91 /* LeagueGamesServices.swift */,
-				B31D6E3D29ED0D4700CA3E91 /* Constants.swift */,
-				B31D6E3F29ED13FF00CA3E91 /* LeagueGamesRepository.swift */,
-				B3397E8429EDCCE80086D344 /* EPLGamesInteractor.swift */,
-				B341B9D229EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift */,
+				B3311FF329EF317700E4DFDA /* Core */,
+				B3311FF229EF316B00E4DFDA /* Helpers */,
+				B3311FF129EF316300E4DFDA /* Data */,
+				B3311FF029EF315700E4DFDA /* View */,
+				B3311FEF29EF314D00E4DFDA /* Domain */,
 				B3E6DB6629EB377C00751B90 /* Assets.xcassets */,
 				B3E6DB6829EB377C00751B90 /* Preview Content */,
-				B3311FEB29EEE91A00E4DFDA /* EplGameRow.swift */,
-				B3311FED29EF227000E4DFDA /* Helpers.swift */,
 			);
 			path = CareferTaskEPL;
 			sourceTree = "<group>";

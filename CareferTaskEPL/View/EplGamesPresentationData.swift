@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct EplDatedGamePresentationData: Identifiable {
+struct EplDatedGamePresentationData: Identifiable, Codable {
     var id = UUID()
     var date: String
     var datedGames: EplGamesPresentationData
 }
-struct EplGamePresentationData: Identifiable{
+struct EplGamePresentationData: Identifiable, Codable{
     let id: Int
     let homeTeamName: String
     let awayTeamName: String

@@ -11,7 +11,8 @@ import Combine
 protocol EplGamesInteracting{
     var eplGamesDomainPublisher: Published<LeagueDatedGamesDomainData?>.Publisher { get }
     func loadGames() async-> LeagueDatedGamesDomainData?
-    func addFavoriteGame(id: Int)
+    func getFavoriteGames()-> EplGamesPresentationData
+    func addFavoriteGame(game: EplGamePresentationData)
 }
 protocol Adapting{
     associatedtype FromType
@@ -19,13 +20,6 @@ protocol Adapting{
     func adapt(from data: FromType) -> ToType?
 }
 class EplGamesInteractor: EplGamesInteracting {
-    func addFavoriteGame(id: Int) {
-//        guard let favoriteGame = eplGamesData?.matches.first(where: {$0.id == id}) else {return}
-//        favoritedEplGames == nil ? favoritedEplGames = [favoriteGame] : favoritedEplGames?.append(favoriteGame)
-//        repo.addFavoriteGame(favoriteGame)
-    
-    }
-    
     
     let repo: LeagueGamesReposing
     var eplGamesData: LeagueGamesData?
@@ -49,6 +43,13 @@ class EplGamesInteractor: EplGamesInteracting {
         return league.matches.filter({date(from: $0.utcDate)! >= Date()})
     }
 
+    func getFavoriteGames() -> EplGamesPresentationData {
+        repo.fetchFavoriteGames()
+    }
+    
+    func addFavoriteGame(game: EplGamePresentationData) {
+        repo.addFavoriteGame(game: game)
+    }
 
 }
 extension EplGamesInteractor: Adapting {
@@ -57,13 +58,6 @@ extension EplGamesInteractor: Adapting {
     
     func adapt(from data: LeagueGamesData) -> LeagueDatedGamesDomainData? {
         LeagueDatedGamesDomainData(datedGames: Dictionary(grouping: getPresentAndFutureGames(from: data), by: {date(from: $0.utcDate)!}))
-//
-//        let keys = getPresentAndFutureGames(from: data).map({$0.utcDate})
-//        var adaptedData: LeagueDatedGamesDomainData?
-//        keys.forEach{key in
-//            adaptedData?.datedGames[key] = data.matches.filter({$0.utcDate == key})
-//        }
-//        return adaptedData
     }
 }
 
