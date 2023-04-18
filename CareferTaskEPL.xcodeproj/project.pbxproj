@@ -3,17 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4264B21F82A99E646EFA0695 /* Pods_CareferTaskEPL_CareferTaskEPLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32158678858660A8C471608 /* Pods_CareferTaskEPL_CareferTaskEPLUITests.framework */; };
+		B31D6E3429EBC94100CA3E91 /* EplGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3329EBC94100CA3E91 /* EplGamesViewModel.swift */; };
+		B31D6E3629EBC97000CA3E91 /* LeagueGamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3529EBC97000CA3E91 /* LeagueGamesData.swift */; };
+		B31D6E3829EBC9AC00CA3E91 /* EplGamesPresentationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3729EBC9AC00CA3E91 /* EplGamesPresentationData.swift */; };
+		B31D6E3A29ECC5D400CA3E91 /* LeagueGamesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3929ECC5D400CA3E91 /* LeagueGamesProvider.swift */; };
+		B31D6E3C29ED0C5700CA3E91 /* LeagueGamesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3B29ED0C5600CA3E91 /* LeagueGamesServices.swift */; };
+		B31D6E3E29ED0D4700CA3E91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3D29ED0D4700CA3E91 /* Constants.swift */; };
+		B31D6E4029ED13FF00CA3E91 /* LeagueGamesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D6E3F29ED13FF00CA3E91 /* LeagueGamesRepository.swift */; };
+		B3311FEC29EEE91A00E4DFDA /* EplGameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3311FEB29EEE91A00E4DFDA /* EplGameRow.swift */; };
+		B3311FEE29EF227000E4DFDA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3311FED29EF227000E4DFDA /* Helpers.swift */; };
+		B3397E8529EDCCE80086D344 /* EPLGamesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3397E8429EDCCE80086D344 /* EPLGamesInteractor.swift */; };
+		B341B9D329EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341B9D229EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift */; };
 		B3E6DB6329EB377A00751B90 /* CareferTaskEPLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB6229EB377A00751B90 /* CareferTaskEPLApp.swift */; };
-		B3E6DB6529EB377A00751B90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB6429EB377A00751B90 /* ContentView.swift */; };
+		B3E6DB6529EB377A00751B90 /* EplGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB6429EB377A00751B90 /* EplGamesView.swift */; };
 		B3E6DB6729EB377C00751B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E6DB6629EB377C00751B90 /* Assets.xcassets */; };
 		B3E6DB6A29EB377C00751B90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E6DB6929EB377C00751B90 /* Preview Assets.xcassets */; };
 		B3E6DB7429EB377C00751B90 /* CareferTaskEPLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB7329EB377C00751B90 /* CareferTaskEPLTests.swift */; };
 		B3E6DB7E29EB377C00751B90 /* CareferTaskEPLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB7D29EB377C00751B90 /* CareferTaskEPLUITests.swift */; };
 		B3E6DB8029EB377C00751B90 /* CareferTaskEPLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6DB7F29EB377C00751B90 /* CareferTaskEPLUITestsLaunchTests.swift */; };
+		C58D56C0B437191DA80B39BB /* Pods_CareferTaskEPLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A787DFB50F646763A6E137 /* Pods_CareferTaskEPLTests.framework */; };
+		EC7914B24D90DB836573B630 /* Pods_CareferTaskEPL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA406EB162A314A8299B34A3 /* Pods_CareferTaskEPL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +48,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180972B9850BBFE014CA2D47 /* Pods-CareferTaskEPLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPLTests.release.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPLTests/Pods-CareferTaskEPLTests.release.xcconfig"; sourceTree = "<group>"; };
+		196BE466D7A825D4D1CE3AD7 /* Pods-CareferTaskEPL-CareferTaskEPLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPL-CareferTaskEPLUITests.release.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPL-CareferTaskEPLUITests/Pods-CareferTaskEPL-CareferTaskEPLUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F9C90E0F0BAB851148CB919 /* Pods-CareferTaskEPL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPL.debug.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPL/Pods-CareferTaskEPL.debug.xcconfig"; sourceTree = "<group>"; };
+		88404FD1315F4A5C548B6FAE /* Pods-CareferTaskEPL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPL.release.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPL/Pods-CareferTaskEPL.release.xcconfig"; sourceTree = "<group>"; };
+		A5F8EDC986FEB1EE25B3E3BE /* Pods-CareferTaskEPLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPLTests.debug.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPLTests/Pods-CareferTaskEPLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA406EB162A314A8299B34A3 /* Pods_CareferTaskEPL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareferTaskEPL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31D6E3329EBC94100CA3E91 /* EplGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EplGamesViewModel.swift; sourceTree = "<group>"; };
+		B31D6E3529EBC97000CA3E91 /* LeagueGamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueGamesData.swift; sourceTree = "<group>"; };
+		B31D6E3729EBC9AC00CA3E91 /* EplGamesPresentationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EplGamesPresentationData.swift; sourceTree = "<group>"; };
+		B31D6E3929ECC5D400CA3E91 /* LeagueGamesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueGamesProvider.swift; sourceTree = "<group>"; };
+		B31D6E3B29ED0C5600CA3E91 /* LeagueGamesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueGamesServices.swift; sourceTree = "<group>"; };
+		B31D6E3D29ED0D4700CA3E91 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B31D6E3F29ED13FF00CA3E91 /* LeagueGamesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueGamesRepository.swift; sourceTree = "<group>"; };
+		B3311FEB29EEE91A00E4DFDA /* EplGameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EplGameRow.swift; sourceTree = "<group>"; };
+		B3311FED29EF227000E4DFDA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		B3397E8429EDCCE80086D344 /* EPLGamesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPLGamesInteractor.swift; sourceTree = "<group>"; };
+		B341B9D229EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDatedGameDomainData.swift; sourceTree = "<group>"; };
 		B3E6DB5F29EB377A00751B90 /* CareferTaskEPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareferTaskEPL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E6DB6229EB377A00751B90 /* CareferTaskEPLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareferTaskEPLApp.swift; sourceTree = "<group>"; };
-		B3E6DB6429EB377A00751B90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3E6DB6429EB377A00751B90 /* EplGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EplGamesView.swift; sourceTree = "<group>"; };
 		B3E6DB6629EB377C00751B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E6DB6929EB377C00751B90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3E6DB6F29EB377C00751B90 /* CareferTaskEPLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareferTaskEPLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +75,9 @@
 		B3E6DB7929EB377C00751B90 /* CareferTaskEPLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareferTaskEPLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E6DB7D29EB377C00751B90 /* CareferTaskEPLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareferTaskEPLUITests.swift; sourceTree = "<group>"; };
 		B3E6DB7F29EB377C00751B90 /* CareferTaskEPLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareferTaskEPLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0A787DFB50F646763A6E137 /* Pods_CareferTaskEPLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareferTaskEPLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3499E5560DCF928D4880E6E /* Pods-CareferTaskEPL-CareferTaskEPLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareferTaskEPL-CareferTaskEPLUITests.debug.xcconfig"; path = "Target Support Files/Pods-CareferTaskEPL-CareferTaskEPLUITests/Pods-CareferTaskEPL-CareferTaskEPLUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F32158678858660A8C471608 /* Pods_CareferTaskEPL_CareferTaskEPLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareferTaskEPL_CareferTaskEPLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7914B24D90DB836573B630 /* Pods_CareferTaskEPL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58D56C0B437191DA80B39BB /* Pods_CareferTaskEPLTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +101,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4264B21F82A99E646EFA0695 /* Pods_CareferTaskEPL_CareferTaskEPLUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D088731512C33E9878099A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA406EB162A314A8299B34A3 /* Pods_CareferTaskEPL.framework */,
+				F32158678858660A8C471608 /* Pods_CareferTaskEPL_CareferTaskEPLUITests.framework */,
+				C0A787DFB50F646763A6E137 /* Pods_CareferTaskEPLTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		686A73757C54DC170D308416 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F9C90E0F0BAB851148CB919 /* Pods-CareferTaskEPL.debug.xcconfig */,
+				88404FD1315F4A5C548B6FAE /* Pods-CareferTaskEPL.release.xcconfig */,
+				E3499E5560DCF928D4880E6E /* Pods-CareferTaskEPL-CareferTaskEPLUITests.debug.xcconfig */,
+				196BE466D7A825D4D1CE3AD7 /* Pods-CareferTaskEPL-CareferTaskEPLUITests.release.xcconfig */,
+				A5F8EDC986FEB1EE25B3E3BE /* Pods-CareferTaskEPLTests.debug.xcconfig */,
+				180972B9850BBFE014CA2D47 /* Pods-CareferTaskEPLTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B3E6DB5629EB377A00751B90 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +138,8 @@
 				B3E6DB7229EB377C00751B90 /* CareferTaskEPLTests */,
 				B3E6DB7C29EB377C00751B90 /* CareferTaskEPLUITests */,
 				B3E6DB6029EB377A00751B90 /* Products */,
+				686A73757C54DC170D308416 /* Pods */,
+				2D088731512C33E9878099A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +157,20 @@
 			isa = PBXGroup;
 			children = (
 				B3E6DB6229EB377A00751B90 /* CareferTaskEPLApp.swift */,
-				B3E6DB6429EB377A00751B90 /* ContentView.swift */,
+				B3E6DB6429EB377A00751B90 /* EplGamesView.swift */,
+				B31D6E3329EBC94100CA3E91 /* EplGamesViewModel.swift */,
+				B31D6E3729EBC9AC00CA3E91 /* EplGamesPresentationData.swift */,
+				B31D6E3529EBC97000CA3E91 /* LeagueGamesData.swift */,
+				B31D6E3929ECC5D400CA3E91 /* LeagueGamesProvider.swift */,
+				B31D6E3B29ED0C5600CA3E91 /* LeagueGamesServices.swift */,
+				B31D6E3D29ED0D4700CA3E91 /* Constants.swift */,
+				B31D6E3F29ED13FF00CA3E91 /* LeagueGamesRepository.swift */,
+				B3397E8429EDCCE80086D344 /* EPLGamesInteractor.swift */,
+				B341B9D229EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift */,
 				B3E6DB6629EB377C00751B90 /* Assets.xcassets */,
 				B3E6DB6829EB377C00751B90 /* Preview Content */,
+				B3311FEB29EEE91A00E4DFDA /* EplGameRow.swift */,
+				B3311FED29EF227000E4DFDA /* Helpers.swift */,
 			);
 			path = CareferTaskEPL;
 			sourceTree = "<group>";
@@ -134,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3E6DB8329EB377C00751B90 /* Build configuration list for PBXNativeTarget "CareferTaskEPL" */;
 			buildPhases = (
+				BCEB9326F5AD7522E8B1A22D /* [CP] Check Pods Manifest.lock */,
 				B3E6DB5B29EB377A00751B90 /* Sources */,
 				B3E6DB5C29EB377A00751B90 /* Frameworks */,
 				B3E6DB5D29EB377A00751B90 /* Resources */,
+				44AFE3BD4285BFBCA0165F5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3E6DB8629EB377C00751B90 /* Build configuration list for PBXNativeTarget "CareferTaskEPLTests" */;
 			buildPhases = (
+				9C783743F4A5660D2FF7F391 /* [CP] Check Pods Manifest.lock */,
 				B3E6DB6B29EB377C00751B90 /* Sources */,
 				B3E6DB6C29EB377C00751B90 /* Frameworks */,
 				B3E6DB6D29EB377C00751B90 /* Resources */,
@@ -169,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3E6DB8929EB377C00751B90 /* Build configuration list for PBXNativeTarget "CareferTaskEPLUITests" */;
 			buildPhases = (
+				217F06BA8B85FAD6FED1FBB1 /* [CP] Check Pods Manifest.lock */,
 				B3E6DB7529EB377C00751B90 /* Sources */,
 				B3E6DB7629EB377C00751B90 /* Frameworks */,
 				B3E6DB7729EB377C00751B90 /* Resources */,
+				6F35FDC10479959863319A68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +285,7 @@
 				};
 			};
 			buildConfigurationList = B3E6DB5A29EB377A00751B90 /* Build configuration list for PBXProject "CareferTaskEPL" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -252,13 +330,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		217F06BA8B85FAD6FED1FBB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareferTaskEPL-CareferTaskEPLUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44AFE3BD4285BFBCA0165F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL/Pods-CareferTaskEPL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL/Pods-CareferTaskEPL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL/Pods-CareferTaskEPL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F35FDC10479959863319A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL-CareferTaskEPLUITests/Pods-CareferTaskEPL-CareferTaskEPLUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL-CareferTaskEPLUITests/Pods-CareferTaskEPL-CareferTaskEPLUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareferTaskEPL-CareferTaskEPLUITests/Pods-CareferTaskEPL-CareferTaskEPLUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C783743F4A5660D2FF7F391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareferTaskEPLTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEB9326F5AD7522E8B1A22D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareferTaskEPL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3E6DB5B29EB377A00751B90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E6DB6529EB377A00751B90 /* ContentView.swift in Sources */,
+				B3397E8529EDCCE80086D344 /* EPLGamesInteractor.swift in Sources */,
+				B31D6E3429EBC94100CA3E91 /* EplGamesViewModel.swift in Sources */,
+				B31D6E4029ED13FF00CA3E91 /* LeagueGamesRepository.swift in Sources */,
+				B3E6DB6529EB377A00751B90 /* EplGamesView.swift in Sources */,
+				B31D6E3629EBC97000CA3E91 /* LeagueGamesData.swift in Sources */,
+				B31D6E3C29ED0C5700CA3E91 /* LeagueGamesServices.swift in Sources */,
+				B31D6E3829EBC9AC00CA3E91 /* EplGamesPresentationData.swift in Sources */,
 				B3E6DB6329EB377A00751B90 /* CareferTaskEPLApp.swift in Sources */,
+				B341B9D329EDEA7C00E8C9FC /* LeagueDatedGameDomainData.swift in Sources */,
+				B31D6E3A29ECC5D400CA3E91 /* LeagueGamesProvider.swift in Sources */,
+				B3311FEE29EF227000E4DFDA /* Helpers.swift in Sources */,
+				B3311FEC29EEE91A00E4DFDA /* EplGameRow.swift in Sources */,
+				B31D6E3E29ED0D4700CA3E91 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +603,7 @@
 		};
 		B3E6DB8429EB377C00751B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9C90E0F0BAB851148CB919 /* Pods-CareferTaskEPL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +633,7 @@
 		};
 		B3E6DB8529EB377C00751B90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88404FD1315F4A5C548B6FAE /* Pods-CareferTaskEPL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +663,7 @@
 		};
 		B3E6DB8729EB377C00751B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F8EDC986FEB1EE25B3E3BE /* Pods-CareferTaskEPLTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +684,7 @@
 		};
 		B3E6DB8829EB377C00751B90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180972B9850BBFE014CA2D47 /* Pods-CareferTaskEPLTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +705,7 @@
 		};
 		B3E6DB8A29EB377C00751B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3499E5560DCF928D4880E6E /* Pods-CareferTaskEPL-CareferTaskEPLUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +724,7 @@
 		};
 		B3E6DB8B29EB377C00751B90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196BE466D7A825D4D1CE3AD7 /* Pods-CareferTaskEPL-CareferTaskEPLUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
