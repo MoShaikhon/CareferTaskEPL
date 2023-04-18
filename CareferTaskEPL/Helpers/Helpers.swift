@@ -10,7 +10,7 @@ import Foundation
 extension String{
     func formatDate() -> String? {
         let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withFullDate, .withTime, .withDashSeparatorInDate, .withColonSeparatorInTime]
+        formatter.formatOptions = [.withFullDate, .withDashSeparatorInDate]
         
         if let date = formatter.date(from: self) {
             let dateFormatter = DateFormatter()
@@ -43,4 +43,9 @@ extension Date{
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: self)
     }
+}
+func date(from dateString: String) -> Date? {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd MMMM yyyy"
+    return dateFormatter.date(from: dateString)
 }

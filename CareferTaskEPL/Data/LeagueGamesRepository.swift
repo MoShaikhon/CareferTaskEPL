@@ -21,7 +21,7 @@ class LeagueGamesRepository: LeagueGamesReposing{
     }
     func fetchGames(leagueCode: LeagueCode) async throws -> LeagueGamesData{
         let response = try await withCheckedThrowingContinuation ({continuation in
-            provider.getLeagueGames(ofLeagueCode: leagueCode.rawValue, responseType: LeagueGamesData.self) { (results) in
+            provider.fetchLeagueGames(ofLeagueCode: leagueCode.rawValue, responseType: LeagueGamesData.self) { (results) in
                 switch results {
                 case .success(let data):
                     continuation.resume(returning: data)

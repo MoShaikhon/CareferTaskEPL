@@ -8,7 +8,7 @@
 import Moya
 
 protocol LeagueGamesProviding{
-    func getLeagueGames<T: Codable>(ofLeagueCode: String, responseType: T.Type ,completion: @escaping (Result<T, Error>) -> Void)
+    func fetchLeagueGames<T: Codable>(ofLeagueCode: String, responseType: T.Type ,completion: @escaping (Result<T, Error>) -> Void)
     func fetchFavoriteGames()-> EplGamesPresentationData
     func addFavoriteGame(game: EplGamePresentationData)
 }
@@ -17,7 +17,7 @@ class LeagueGamesProvider: LeagueGamesProviding{
     
     let provider = MoyaProvider<LeagueGamesServices>()
     
-    func getLeagueGames<T>(ofLeagueCode: String, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) where T : Decodable, T : Encodable {
+    func fetchLeagueGames<T>(ofLeagueCode: String, responseType: T.Type, completion: @escaping (Result<T, Error>) -> Void) where T : Decodable, T : Encodable {
         provider.request(.games(leagueCode: ofLeagueCode)) { result in
             switch result {
             case .success(let response):

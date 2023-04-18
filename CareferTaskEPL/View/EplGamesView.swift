@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EplGamesView: View {
-    @StateObject var viewModel: EplGamesViewModel = EplGamesViewModel(interactor: EplGamesInteractor(repo: LeagueGamesRepository(provider: LeagueGamesProvider())))
+    @StateObject var viewModel: EplGamesViewModel
     var body: some View {
         VStack{
             ControlGroup {
@@ -42,8 +42,6 @@ struct EplGamesView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EplGamesView()
-        //            .previewLayout(.fixed (width: 300, height: 90))
-        
+        EplGamesView(viewModel: EplGamesViewModel(interactor: EplGamesInteractor(repo: LeagueGamesRepository(provider: LeagueGamesProvider()))))
     }
 }

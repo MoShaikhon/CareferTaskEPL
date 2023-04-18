@@ -43,7 +43,7 @@ extension EplGamesViewModel: Adapting{
         
         keys.forEach{key in
             guard let games = data.datedGames[key]?.map({EplGamePresentationData(id: $0.id, homeTeamName: $0.homeTeam.shortName, awayTeamName: $0.awayTeam.shortName, homeTeamScore: $0.score.fullTime.home == nil ? "-" : String($0.score.fullTime.home!), awayTeamScore: $0.score.fullTime.away == nil ? "-" : String($0.score.fullTime.away!), shouldShowMatchTimeInsteadOfScore: $0.score.fullTime.home == nil, matchTime: $0.utcDate.getTimeString() ?? "unknown")}) else {return }
-            adaptedData.append(EplDatedGamePresentationData(date: key.description , datedGames: games))
+            adaptedData.append(EplDatedGamePresentationData(date: key.dateStringFromDate() , datedGames: games))
             
         }
         return adaptedData

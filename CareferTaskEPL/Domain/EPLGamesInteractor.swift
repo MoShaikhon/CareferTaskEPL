@@ -36,11 +36,11 @@ class EplGamesInteractor: EplGamesInteracting {
         do {
             eplGamesData = try await repo.fetchGames(leagueCode: .epl)
             eplGamesDomainData = adapt(from: eplGamesData!)
-        } catch{ print(error) }
+        } catch{ debugPrint(error) } // code smell (no error propagation)
         return eplGamesDomainData
     }
     func getPresentAndFutureGames(from league: LeagueGamesData) -> [Match] {
-        return league.matches.filter({date(from: $0.utcDate)! >= Date()})
+        return league.matches.filter({date(from: $0.utcDate.formatDate()!)! >= Date()}) // code smell
     }
 
     func getFavoriteGames() -> EplGamesPresentationData {
@@ -57,12 +57,8 @@ extension EplGamesInteractor: Adapting {
     typealias FromType = LeagueGamesData
     
     func adapt(from data: LeagueGamesData) -> LeagueDatedGamesDomainData? {
-        LeagueDatedGamesDomainData(datedGames: Dictionary(grouping: getPresentAndFutureGames(from: data), by: {date(from: $0.utcDate)!}))
+        LeagueDatedGamesDomainData(datedGames: Dictionary(grouping: getPresentAndFutureGames(from: data), by: {date(from: $0.utcDate.formatDate()!)!})) // code smell
     }
 }
 
-func date(from dateString: String) -> Date? {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-    return dateFormatter.date(from: dateString)
-}
+

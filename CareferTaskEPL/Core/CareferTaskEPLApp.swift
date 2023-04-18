@@ -11,7 +11,7 @@ import SwiftUI
 struct CareferTaskEPLApp: App {
     var body: some Scene {
         WindowGroup {
-            EplGamesView()
+            EplGamesView(viewModel: EplGamesViewModel(interactor: EplGamesInteractor(repo: LeagueGamesRepository(provider: LeagueGamesProvider()))))
         }
     }
 }
